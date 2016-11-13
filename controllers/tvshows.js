@@ -30,20 +30,22 @@ exports.findById = function(req, res){
 //POST - Insert a new TVShow in the DB
 
 exports.addTVShow = function (req, res){
-	console.log('POST');
-	console.log(req.body);
+    console.log('POST');
+    console.log(req.body);
 
-	var tvshow = new TVShow({
-		title:   req.body.title,
-		year:    req.body.year,
-		country: req.body.country,
-		poster:  req.body.poster,
-		seasons: req.body.seasons,
-		genre:   req.body.genre,
-		summary: req.body.summary
-	});
+	var tvshow = new TVShow(
+        {
+		title: req.body.title,
+        year: req.body.year,
+        country: req.body.country,
+        poster: req.body.poster,
+        seasons: req.body.seasons,
+        genre:    req.body.genre,
+        summary: req.body.summary
+	   }
+    );
 
-
+    
 	tvshow.save(function (err, tvshow) {
 		if (err) {
 			return res.status(500).send(err.message);
