@@ -10,8 +10,8 @@ Ejemplo de una restful api service realizado en mongodb.
 
 ##Instalar las dependencias y correr el servidor.
  
- ´´´sh
+ ```sh
  $ git clone https://github.com/EduardoHD94/RestApi_NodeJS.git
  $ sudo npm install
  $ sudo npm start
- ```
+ ´´´
