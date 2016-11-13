@@ -127,7 +127,7 @@ exports.authenticate = function(req, res) {
 	      	 var token = jwt.sign(user, database.secret, {
 	          expiresIn: 60*60*24 // expires in 24 hours
 	        });
-	      	 console.log(token);
+	      	// console.log(token);
 	       
 
 	        // return the information including token as JSON
