@@ -50,7 +50,7 @@ var user = express.Router();
 require('./routes/tvshowsroutes.js')(tvshows,TVShowCtrl);
 require('./routes/userroutes.js')(user,UserCtrl);
 
-var path = '/path/v1';
+var path = '/api/v1';
 //Define Routes
 app.use(router);
 app.use(path,tvshows);
