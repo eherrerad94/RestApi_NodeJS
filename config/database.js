@@ -1,4 +1,4 @@
 module.exports = {
-	url : 'mongodb://localhost/tvshows',
+	url : 'mongodb://localhost/MongoExample',
 	secret: 'iloveeduardoherrera'
 }
