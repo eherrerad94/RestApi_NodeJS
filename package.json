@@ -4,7 +4,9 @@
   "description": "simple restful api with nodejs and mongodb",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,9 +31,11 @@
     "jsonwebtoken": "^7.1.9",
     "method-override": "^2.3.6",
     "mongoose": "^4.6.7",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
-  }
+  },
+  "snyk": true
 }
